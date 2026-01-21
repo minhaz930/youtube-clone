@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*========================= HEADER SECTION ========================================*/
+
+.header {
+  height: 60px;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .createBellPro {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* ! ===== ICONS ====== */
+
+.icon {
+  display: flex;
+}
+
+.fa-bars {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.fa-youtube {
+  font-size: 30px;
+  color: red;
+  padding: 10px;
+}
+
+span {
+  margin-top: 15px;
+  padding-right: 10px;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+.fa-microphone {
+  font-size: 22px;
+  margin-left: 10px;
+  padding-top: 10px;
+  border: 2px transparent black;
+  border-radius: 90px;
+  background-color: rgb(247, 244, 244);
+  width: 42px;
+  text-align: center;
+}
+
+.icon2 {
+  display: flex;
+  margin: 10px;
+}
+
+.header input {
+  margin-left: 200px;
+  height: 42px;
+  width: 600px;
+  text-align: left;
+  border: 2px transparent black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.icon_34 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(208, 203, 203, 0.571);
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.createBellPro {
+  padding-right: 25px;
+}
+
+.fa-plus {
+  font-size: 20px;
+}
+
+.icon_34 span {
+  font-size: 15px;
+}
+
+.fa-bell {
+  font-size: 25px;
+
+  padding: 10px;
+  border-radius: 90px;
+  width: 42px;
+  text-align: center;
+}
+
+.icon4 img {
+  height: 35px;
+  width: 35px;
+  border-radius: 90px;
+  margin-left: 15px;
+  margin-top: 0.3rem;
+}
+
+/* ! ======= HOVER Effect On Icon ======= */
+
+.fa-microphone:hover {
+  cursor: pointer;
+  background-color: rgb(239, 234, 234);
+}
+
+.icon3:hover {
+  cursor: pointer;
+  background-color: rgb(239, 234, 234);
+}
+
+.fa-bell:hover {
+  cursor: pointer;
+  background-color: rgb(239, 234, 234);
+}
+
+.icon4 img:hover {
+  cursor: pointer;
+  background-color: rgb(239, 234, 234);
+}
+
+/* ! ======== MAIN WRAPPER =========== */
+
+.main {
+  display: flex;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+/* ========================= SIDEBAR SECTION       PARENT ===================== */
+
+.sider {
+  border-radius: 10px;
+}
+
+.sidebar span {
+  padding-left: 20px;
+  padding-top: 12px;
+  gap: 30px;
+  font-size: 17px;
+  /* background-color: blue; */
+  height: 40px;
+  width: 190px;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  padding: 5px;
+  margin-left: 15px;
+  overflow-y: auto;
+
+  /* background-color: lightgreen; */
+}
+
+.sidebar i {
+  font-size: 20px;
+  /* color: red; */
+  padding-left: 10px;
+}
+
+.you .sider,
+.home .sider,
+.subscription .sider {
+  display: flex;
+
+  align-items: center;
+}
+
+.subscription img {
+  height: 28px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.subscription .sider span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ! ===== HOVER EFFECT ON SIDER ======== */
+
+.sider:hover {
+  cursor: pointer;
+  background-color: rgb(246, 245, 245);
+}
+
+/*======================= VIDEO CONTENT AREA =========================== */
+
+.sid {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* ================ CONTENT SECTION      PARENT ======================== */
+
+.content {
+  /* background-color: lightblue; */
+  padding: 20px;
+  width: 100%;
+}
+
+/* ==================== BOX SECTION      PARENT ======================== */
+
+.content-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+#scrollBox {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+#scrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+.sid {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+/* 
+.sid::-webkit-scrollbar {
+  display: none;
+} */
+
+.box {
+  padding: 5px 10px;
+  background-color: rgba(224, 223, 223, 0.466);
+  border-radius: 8px;
+  font-size: 15px;
+  /* text-align: center; */
+  /* display: inline-block; */
+  /* user-select: none; */
+}
+
+.box:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.left-btn,
+.right-btn {
+  border: none;
+  background: white;
+  font-size: 22px;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* z-index: 10; */
+}
+
+/* ==================== CARD-CONTAINER SECTION      PARENT ======================== */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 8px;
+  padding-top: 15px;
+  gap: 20px;
+}
+
+/* ==================== CARD-SECTION      PARENT ======================== */
+
+.card {
+  background-color: white;
+  width: 100%;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 10px grba(1, 1, 1, 0.1);
+  transition: 0.5s ease;
+}
+
+p {
+  font-size: large;
+  padding-left: 6px;
+}
+
+span {
+  font-size: medium;
+}
+
+/* ! ===== Hover Effect ====== */
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+/* ! ===== Video aspect ======= */
+
+/* .card-container .crad iframe {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+} */
+
+.card-container .card iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* =================== MEDIA QUERIES =================== */
+
+/* TABLET - max-width: 992px */
+@media (max-width: 992px) {
+  .header input {
+    width: 350px;
+    margin-left: 40px;
+  }
+
+  .sidebar {
+    width: 160px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* MOBILE - max-width: 720px */
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 8px;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .icon2 {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header input {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  /* category slider full width */
+  /* .content-box {
+    gap: 5px;
+  } */
+
+  /* cards single column */
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.waSticky {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 100;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: blue;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waSticky i {
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+.waSticky .moreLinks {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  gap: 0.5rem;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  opacity: 0;
+  transition: 0.3s all;
+  z-index: -1;
+}
+
+.waSticky:hover .moreLinks {
+  opacity: 1;
+  padding-bottom: 3rem;
+}
+
+.waSticky .moreLinks a {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: blue;
+  color: white !important;
+}
+
+/* VERY SMALL PHONES - max-width: 400px*/
+/* @media (max-width: 400px) {
+  .header input {
+    width: 100%;
+  }
+
+  .fa-microphone,
+  .fa-magnifying-glass {
+    font-size: 18px;
+  }
+
+  .box {
+    font-size: 13px;
+    padding: 3px 7px;
+  }
+}
+                                                  */
